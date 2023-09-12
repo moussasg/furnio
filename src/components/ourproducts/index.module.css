@@ -1,0 +1,11 @@
+.imgourproducts {
+    width: 100%;
+    display: flex;
+    gap: 6%;
+  }
+  .imgourproducts > div {
+    width: 20vw;
+  }
+  .imgourproducts div img {
+    width: 100%;
+  }
