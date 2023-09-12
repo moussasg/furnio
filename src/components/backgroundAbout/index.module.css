@@ -1,0 +1,58 @@
+.bgrnd {
+    margin-top: 100px;
+    left: 0px;
+    padding: 0;
+    background-image: url(../../assets/backgroundabout.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Discover {
+display: flex;
+background-color: #FFF3E3;
+width: 550px;
+height: 390px;
+margin-bottom: 200px;
+margin-left: 680px;
+border-radius: 10px;
+}
+.Discoverdetails {
+margin-left: 20px;
+display: flex;
+gap:20px;
+flex-direction: column;
+}
+.h1discover {
+color: #B88E2F;
+font-family: Poppins;
+font-size: 52px;
+font-weight: 700;
+line-height: 65px;
+letter-spacing: 0px;
+text-align: left;
+}
+.newariv {
+    display: flex;
+    width: 100%;
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 3px;
+text-align: left;
+}
+button.buyy{
+    width: 222px;
+    height: 74px;
+    top: 585px;
+    left: 778px;
+    padding: 25px 72px 25px 72px;
+    gap: 10px;
+    background-color: #B88E2F;
+}
+
+
