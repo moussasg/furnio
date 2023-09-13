@@ -14,8 +14,8 @@ export default function Hashtags() {
     <>
     <section className={Style.mysec}>
         <div className={Style.title}>
-        <h1 style={{ color: '#616161' }}>Share your setup with</h1><br/>
-        <h1 style={{ color: '#3A3A3A' }}>#FuniroFurniture</h1>
+        <div className={Style.Share}>Share your setup with</div><br/>
+        <div className={Style.furniture}>#FuniroFurniture</div>
         </div>
         <br/>
     <div className={Style.gallery}>

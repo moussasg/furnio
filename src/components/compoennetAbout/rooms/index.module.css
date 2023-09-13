@@ -3,6 +3,24 @@ section {
     width: 100%;
     display: flex;
 }
+.sametitele{
+  font-family: Poppins;
+font-size: 40px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: left;
+  color:#3A3A3A
+}
+.subtitle {
+  color: #616161;
+  font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+}
 .cont {
     display: flex;
     width: 100%;
@@ -14,7 +32,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Aligner les éléments à gauche */
-    margin-left: 3vw;
 }
 .titlerooms h1, .titlerooms p, .titlerooms .btn {
     margin-bottom: 10px; /* Espacement entre les éléments si nécessaire */
@@ -42,6 +59,7 @@ section {
   
   .overlay {
     display: flex;
+    text-align: left;
     gap: 1vh;
     flex-direction: column;
     justify-content: center;

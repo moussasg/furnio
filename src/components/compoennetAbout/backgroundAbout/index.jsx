@@ -5,9 +5,10 @@ export default function Mybackground() {
     <section className={Style.bgrnd}>
         <div className={Style.Discover}>
             <div className={Style.Discoverdetails}>
-                <br/>
                 <div className={Style.newariv}>New Arrival</div>
-                <h1 className={Style.h1discover}>Discover Our  <br/>New Collection</h1>
+                <div className={Style.h1discover}>
+                  Discover Our  <br/>New Collection
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/> Ut  magnam officia, eveniet minus eaque ipsa</p>
                 <button className={Style.buyy}>BUY NOW</button>
                 <br></br>

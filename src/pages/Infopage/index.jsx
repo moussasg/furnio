@@ -9,6 +9,7 @@ import Navbrar from '../../components/compoennetAbout/navbar/index'
 export default function index() {
   return (
     <>
+    <div>
       <Header/>
       <Background/>
       <br/>
@@ -22,6 +23,7 @@ export default function index() {
     <Hashtags/>
     <br/>
     <Navbrar/>
+    </div>
       </>
   )
 }

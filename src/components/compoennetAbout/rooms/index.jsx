@@ -8,8 +8,8 @@ export default function Rooms() {
         <section>
             <div className={Style.cont}>
             <div className={Style.titlerooms}>
-                <div><h1>50+ Beautiful rooms </h1></div><div><h1>inspiration</h1></div>
-                <div><p>Our designer already made a lot of Beautiful</p></div><div><p>prototipe of roomsthat inspire you </p></div>
+                <div className={Style.sametitele}>50+ Beautiful rooms</div><div className={Style.sametitele}>inspiration</div>
+                <div  className={Style.subtitle}>Our designer already made a lot of Beautiful</div><div className={Style.subtitle}>prototipe of roomsthat inspire you </div>
                <div> <button className={Style.btn}><h3 style={{ color: 'white' }}>Explore More</h3></button></div>
             </div>
             <div className={Style.imgrooms}>

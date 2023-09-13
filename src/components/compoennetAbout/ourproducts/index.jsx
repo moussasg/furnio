@@ -13,7 +13,7 @@ export default function Ourproducts() {
   return (
     <div>
       <section>
-        <h1>Our Products</h1>
+        <div className={Style.Our}>Our Products</div>
         <br/>
         <div className={Style.row}> {/*the same style for two row */}
           <div className={Style.rowoneimg}>

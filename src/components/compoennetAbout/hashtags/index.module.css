@@ -2,6 +2,24 @@
 section.mysec {
     width: 100%;
 }
+.Share {
+  color: #616161;
+  font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: center;
+}
+.furniture {
+  font-family: Poppins;
+font-size: 40px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: center;
+color:#3A3A3A;;
+}
 .gallery {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;

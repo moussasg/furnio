@@ -8,14 +8,14 @@ export default function Range() {
     <>
     <section>
         <div className={Style.title}>
-        <h1>Browse The Range</h1>
-        <p>loreum ipsum dolor sit amet</p>
+        <h1 className={Style.Browse}>Browse The Range</h1>
+        <p className={Style.loreum}>loreum ipsum dolor sit amet</p>
         </div>
         <br></br>
         <div className={Style.imgtitle}>
-        <div><img src={dining}></img><h4>Dining</h4></div>
-        <div><img src={living}></img><h4>living</h4></div>
-        <div><img src={bedrom}></img><h4>bedrom</h4></div>
+        <div className={Style.flex}><img src={dining}></img><h4>Dining</h4></div>
+        <div className={Style.flex}><img src={living}></img><h4>living</h4></div>
+        <div className={Style.flex}><img src={bedrom}></img><h4>bedrom</h4></div>
         </div>
     </section>
     </>

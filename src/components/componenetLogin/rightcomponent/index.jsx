@@ -1,10 +1,15 @@
 import React from 'react'
-import Style from "./index.module.css"
 import Ui from "./ui"
+import Style from "./index.module.css"
+import { Route , Routes} from 'react-router-dom';
 export default function Rightcomponenet() {
+    const hand = () => {
+    window.location.replace('http://localhost:5173/Infopage');
+
+    }
   return (
     <>
-    <div className={Style.right}>
+    <div className={Style.right}>  
     <div className={Style.title}>
         <div className={Style.createtitle}>
            <div className={Style.createac}>Create an account</div>
@@ -12,6 +17,7 @@ export default function Rightcomponenet() {
         </div>
     </div>
     <div className={Style.register}>
+        <div>
         <div className={Style.inp}>
             <div className={Style.same}>Name</div>
             <Ui/>
@@ -26,10 +32,11 @@ export default function Rightcomponenet() {
         <div className={Style.same}>Password</div>
             <Ui/>
         </div>
-        </div> 
     <div className={Style.twobutton}>
-        <button className={Style.buttcreate}><p>Create Account</p></button>
-        <button className={Style.buttsignup}><p>Sign up with Google</p></button>
+        <button onClick={hand} type="submit" className={Style.buttcreate}><p>Create Account</p></button>
+        <button  className={Style.buttsignup}><p>Sign up with Google</p></button>
+        </div>
+        </div> 
     </div>
     <div className={Style.haveaccount}>
         <div className={Style.lastAlready}>Already have an account?</div>

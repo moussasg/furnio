@@ -35,7 +35,16 @@
     height: 70vh;
     gap: 28vh;
 }
-  .txtflex h1,h2,h3,h4 {
+  .txtflex h1 {
+    color: white;
+  }
+  .txtflex h2 {
+    color: white;
+  }
+  .txtflex h3{
+    color: white;
+  }
+  .txtflex h4 {
     color: white;
   }
   .ceo {
