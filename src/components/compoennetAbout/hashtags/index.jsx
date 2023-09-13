@@ -1,14 +1,14 @@
 import React from 'react'
 import Style from "./index.module.css"
-import imgone from "../../assets/1.png"
-import imgtwo from "../../assets/2.png"
-import imgtree from "../../assets/3.png"
-import imgfor from "../../assets/4.png"
-import imgfive from "../../assets/5.png"
-import imgsix from "../../assets/6.png"
-import imgseven from "../../assets/7.png"
-import imgheight from "../../assets/8.png"
-import nign from "../../assets/9.png"
+import imgone from "../../../assets/1.png"
+import imgtwo from "../../../assets/2.png"
+import imgtree from "../../../assets/3.png"
+import imgfor from "../../../assets/4.png"
+import imgfive from "../../../assets/5.png"
+import imgsix from "../../../assets/6.png"
+import imgseven from "../../../assets/7.png"
+import imgheight from "../../../assets/8.png"
+import nign from "../../../assets/9.png"
 export default function Hashtags() {
   return (
     <>

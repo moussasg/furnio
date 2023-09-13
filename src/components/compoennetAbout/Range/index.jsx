@@ -1,8 +1,8 @@
 import React from 'react'
 import Style from "./index.module.css"
-import bedrom from "../../assets/bedrom.png"
-import living from "../../assets/living.png"
-import dining from "../../assets/dining.png"
+import bedrom from "../../../assets/bedrom.png"
+import living from "../../../assets/living.png"
+import dining from "../../../assets/dining.png"
 export default function Range() {
   return (
     <>

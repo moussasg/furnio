@@ -1,7 +1,7 @@
 import React from 'react'
 import Style from "./index.module.css"
-import Bedrom from "../../assets/Rectangle 24bedroom.png"
-import livingroom from "../../assets/Rectangle 25cuisin.png"
+import Bedrom from "../../../assets/Rectangle 24bedroom.png"
+import livingroom from "../../../assets/Rectangle 25cuisin.png"
 export default function Rooms() {
   return (
     <div>

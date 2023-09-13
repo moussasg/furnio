@@ -1,10 +1,10 @@
 import './App.css'
-import Infopage from "./pages/Infopage/index"
+import Loginpage from "./pages/loginpage/index"
 function App() {
   return (
     <>
       <div>
-      <Infopage/>
+      <Loginpage/>
       </div>
     </>
   )

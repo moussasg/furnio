@@ -1,10 +1,10 @@
 import React from 'react'
 import Style from "./index.module.css"
-import Logonav from "../../assets/logonav.png"
-import Loginimg from "../../assets/loginimg.png"
-import magnifyingglass from "../../assets/magnifyingglass.png"
-import Folow from "../../assets/folow.png"
-import Basket from "../../assets/basket.png"
+import Logonav from "../../../assets/logonav.png"
+import Loginimg from "../../../assets/loginimg.png"
+import magnifyingglass from "../../../assets/magnifyingglass.png"
+import Folow from "../../../assets/folow.png"
+import Basket from "../../../assets/basket.png"
 export default function Header() {
   return (
     <>

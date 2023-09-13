@@ -1,13 +1,13 @@
 import React from 'react';
 import Style from "./index.module.css";
-import espira from "../../assets/espira.png";
-import Leviosa from "../../assets/Leviosa.png";
-import lolito from "../../assets/lolito.png";
-import syltherine from "../../assets/syltherine.png";
-import grifo from "../../assets/Imagesgrifo.png";
-import mugo from "../../assets/imgmugo.png";
-import pingky from "../../assets/image 7pingky.png";
-import potty from "../../assets/image 8potty.png";
+import espira from "../../../assets/espira.png";
+import Leviosa from "../../../assets/Leviosa.png";
+import lolito from "../../../assets/lolito.png";
+import syltherine from "../../../assets/syltherine.png";
+import grifo from "../../../assets/Imagesgrifo.png";
+import mugo from "../../../assets/imgmugo.png";
+import pingky from "../../../assets/image 7pingky.png";
+import potty from "../../../assets/image 8potty.png";
 
 export default function Ourproducts() {
   return (
