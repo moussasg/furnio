@@ -1,0 +1,27 @@
+
+section.mysec {
+    width: 100%;
+}
+.gallery {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    width: 100%;
+    display: grid;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;
+    justify-items: end;
+}
+  
+  .item {
+    position: relative;
+    overflow: hidden;
+    background: #f4f4f4;
+    border-radius: 8px;
+  }
+  
+  .item img {
+    max-width: 100%; /* Ajustez la taille maximale de l'image si nécessaire */
+  max-height: 100%; /* Ajustez la taille maximale de l'image si nécessaire */
+  display: block;
+  margin: auto; /* Centre l'image horizontalement */
+  }

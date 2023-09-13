@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .row {
+    display: flex;
+    gap: 12vw;
+  }
+  
+  .column {
+    margin: 0 10px; /* Espacement entre les colonnes */
+  }
+  
+  p {
+    margin: 0; /* Supprimer la marge par défaut des paragraphes */
+  }
+  

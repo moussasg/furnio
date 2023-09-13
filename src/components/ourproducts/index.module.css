@@ -1,11 +1,49 @@
-.imgourproducts {
-    width: 100%;
-    display: flex;
-    gap: 6%;
-  }
-  .imgourproducts > div {
-    width: 20vw;
-  }
-  .imgourproducts div img {
-    width: 100%;
-  }
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.rowoneimg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.rowoneimg > div {
+  width: 20vw;
+}
+.rowoneimg div img {
+  width: 100%;
+}
+.containerproducts {
+  background-color: #F4F5F7;
+}
+.rowtwoimg {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.rowtwoimg > div {
+  width: 20vw;
+}
+.rowtwoimg div img {
+  width: 100%;
+}
+.btn button {
+height: 50px;
+width: 250px;
+border:  solid 1px  #B88E2F;
+}
+.btn h3 {
+  display: flex;
+  justify-content: center;
+  color: #B88E2F;
+  font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+}
+

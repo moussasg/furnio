@@ -6,7 +6,6 @@ import magnifyingglass from "../../assets/magnifyingglass.png"
 import Folow from "../../assets/folow.png"
 import Basket from "../../assets/basket.png"
 export default function Header() {
-  console.log()
   return (
     <>
         <header>
