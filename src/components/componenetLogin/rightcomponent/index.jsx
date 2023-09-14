@@ -1,5 +1,6 @@
 import React , {useState} from 'react'
 import Ui from "./ui"
+import Logogoogle from "../../../assets/Vectorgoogle.png"
 import axios from "axios"
 import Style from "./index.module.css"
 import { useAuth } from './autcontext';
@@ -8,17 +9,19 @@ import BasicTextFields from './ui';
 export default function Rightcomponenet() {
     const { setUserToken } = useAuth(); // Destructure setUserToken from AuthContext
     const navigate = useNavigate()
+    const [urname, setUrname] = useState('');
     const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
     const handleChange = (event) => {
         const { name, value } = event.target;
         if (name === 'email') setEmail(value);
         if (name === 'password') setPassword(value);
+        if (name === 'urname') setUrname(value);
       };
     const handleSubmit = async (event) => {
         event.preventDefault();
         try { // send request to server
-          const response = await axios.post('http://localhost:3002/Home', { email, password })
+          const response = await axios.post('http://localhost:3002/Home', { email, password , urname})
           console.log(response)
           if (response.data.success === true) {
             const token = response.data.token; // 'jwt' le clé de stockage
@@ -47,6 +50,11 @@ export default function Rightcomponenet() {
         <form onSubmit={handleSubmit}>
         <br/>
         <div className={Style.inp}>
+            <div className={Style.same}>Name</div>
+            <BasicTextFields name="urname" value={urname} onChange={handleChange} />
+        </div>
+        <br/>
+        <div className={Style.inp}>
         <div className={Style.same}>Email</div>
         <BasicTextFields name="email" value={email} onChange={handleChange} />
         </div>
@@ -55,9 +63,10 @@ export default function Rightcomponenet() {
         <div className={Style.same}>Password</div>
         <BasicTextFields type='password' name="password" value={password} onChange={handleChange} />
         </div>
+        <br/>
     <div className={Style.twobutton}>
         <button type="submit" className={Style.buttcreate}><p>Create Account</p></button>
-        <button  className={Style.buttsignup}><p>Sign up with Google</p></button>
+        <button className={Style.buttsignup}><div className={Style.logotext}><img src={Logogoogle}></img><div>Sign up with Google</div></div></button>
         </div>
         </form>
         </div> 

@@ -60,6 +60,7 @@ export default function Signin() {
         <div className={Style.same}>Password</div>
         <BasicTextFields type='password' name="password" value={password} onChange={handleChange} />
         </div>
+        <br/>
         <div className={Style.twobutton}>
         <button type="submit" className={Style.buttcreate}><p>Sign In</p></button>
         </div>
