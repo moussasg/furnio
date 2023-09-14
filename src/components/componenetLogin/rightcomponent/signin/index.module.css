@@ -125,3 +125,51 @@ color: black;
     text-align: left; 
     color: #3EC1F3;
 }
+/* Styles pour un input qui ressemble à celui de Material UI */
+
+/* Style pour le conteneur de l'input */
+.input {
+    position: relative;
+    margin-bottom: 16px; /* Espacement en bas du conteneur */
+  }
+  
+  /* Style pour l'input lui-même */
+  .input-element {
+    width: 100%;
+    padding: 10px; /* Espacement à l'intérieur de l'input */
+    font-size: 16px;
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 4px; /* Coins arrondis */
+    box-sizing: border-box;
+    transition: border-color 0.2s; /* Transition de la couleur de la bordure */
+  }
+  
+  /* Style pour l'effet de focus */
+  .input-element:focus {
+    outline: none;
+    border-color: #1976d2; /* Couleur de la bordure lorsqu'il est en focus */
+  }
+  
+  /* Style pour le label (optionnel) */
+  .input-label {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Espacement à gauche du label */
+    transform: translateY(-50%);
+    background-color: #fff; /* Fond du label pour le rendre lisible */
+    padding: 0 4px; /* Espacement à l'intérieur du label */
+    font-size: 14px;
+    color: #666; /* Couleur du label */
+    pointer-events: none; /* Permet aux événements de se propager à travers le label */
+    transition: transform 0.2s, font-size 0.2s, color 0.2s, padding 0.2s; /* Transition pour les animations */
+  }
+  
+  /* Style du label lorsqu'il est en haut */
+  .input-element:focus + .input-label,
+  .input-element:not(:placeholder-shown) + .input-label {
+    transform: translateY(-100%) scale(0.8);
+    font-size: 12px;
+    padding: 0 2px;
+    color: #1976d2;
+  }
+  

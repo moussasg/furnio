@@ -4,6 +4,7 @@ import axios from "axios"
 import Style from "./index.module.css"
 import { useAuth } from './autcontext';
 import { Link, useNavigate } from 'react-router-dom';
+import BasicTextFields from './ui';
 export default function Rightcomponenet() {
     const { setUserToken } = useAuth(); // Destructure setUserToken from AuthContext
     const navigate = useNavigate()
@@ -44,19 +45,15 @@ export default function Rightcomponenet() {
     <div className={Style.register}>
         <div>
         <form onSubmit={handleSubmit}>
-        <div className={Style.inp}>
-            <div className={Style.same}>Name</div>
-            <Ui/>
-        </div>
         <br/>
         <div className={Style.inp}>
         <div className={Style.same}>Email</div>
-            <Ui type="email" name="email" value={email} onChange={handleChange}/>
+        <BasicTextFields name="email" value={email} onChange={handleChange} />
         </div>
         <br/>
         <div className={Style.inp}>
         <div className={Style.same}>Password</div>
-            <Ui type="password" name="password" value={password} onChange={handleChange}/>
+        <BasicTextFields name="password" value={password} onChange={handleChange} />
         </div>
     <div className={Style.twobutton}>
         <button type="submit" className={Style.buttcreate}><p>Create Account</p></button>

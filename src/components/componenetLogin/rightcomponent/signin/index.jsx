@@ -5,6 +5,7 @@ import Style from "./index.module.css"
 import { useAuth } from '../autcontext';
 import { useNavigate } from 'react-router-dom';
 import Leftcompoent from '../../leftcomponent/Leftcompoent';
+import BasicTextFields from '../ui';
 export default function Signin() {
     const { setUserToken } = useAuth(); // Destructure setUserToken from AuthContext
     const navigate = useNavigate()
@@ -46,17 +47,18 @@ export default function Signin() {
     <div className={Style.register}>
         <div>
         <form onSubmit={handleSubmit}>
+
         <br/>
         <div className={Style.inp}>
         <div className={Style.same}>
             Email
             </div>
-            <Ui type="email" name="email" value={email} onChange={handleChange}/>
+            <BasicTextFields name="email" value={email} onChange={handleChange} />
         </div>
         <br/>
         <div className={Style.inp}>
         <div className={Style.same}>Password</div>
-            <Ui type="password" name="password" value={password} onChange={handleChange}/>
+        <BasicTextFields name="password" value={password} onChange={handleChange} />
         </div>
         <div className={Style.twobutton}>
         <button type="submit" className={Style.buttcreate}><p>Sign In</p></button>

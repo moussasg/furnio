@@ -1,22 +1,27 @@
-import * as React from 'react';
+import React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
-export default function BasicTextFields() {
+const BasicTextFields = ({ name, value, onChange }) => {
   return (
     <Box
       component="form"
       sx={{
-        '& > :not(style)': { m: 1, width: '50ch' },
+        '& > :not(style)': { m: 1, width: '25ch' },
       }}
       noValidate
       autoComplete="off"
     >
-      <TextField
-        id="standard-basic"
-        variant="standard"
-        type="email" // Spécifie le type de champ comme email
+      <TextField 
+        id={name} 
+        name={name} 
+        value={value} 
+        onChange={onChange} 
+        variant="standard" 
+        fullWidth 
       />
     </Box>
   );
 }
+
+export default BasicTextFields;
