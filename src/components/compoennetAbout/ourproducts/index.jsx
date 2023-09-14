@@ -38,10 +38,9 @@ export default function Ourproducts() {
 
 
             <div className={Style.cotainerimg} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <div>
+            <div className={Style.innerContainer}>
                 <img src={Leviosa} alt="Leviosa"></img>
-                </div>
-                {isHovered && (
+              {isHovered && (
               <div className={Style.overlay}>
                       <button className={Style.addtocard}><p>Add To Card </p></button>
                   </div>
@@ -51,9 +50,8 @@ export default function Ourproducts() {
                 <div className={Style.gray}>Stylish cafe chair</div>
                 <div className={Style.title}>Rp 2.500.000</div>
                 </div>
-              </div>
-
-
+                </div>
+</div>
 
 
 

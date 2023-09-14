@@ -90,31 +90,42 @@ color: #898989;
   color: #B88E2F;
 }
 button.addtocard {
-  border-radius: 0;
-  width: 202px;
+  top: 50%;
+  left:25%;
+position: relative;
+border-radius: 0;
+width: 202px;
 height: 48px;
-left: 25px;
 background-color:#FFFFFF
 }
 /*cotainerimg pranent*/
 .cotainerimg {
+  display: flex;
+  gap: 5px;
   position: relative;
   display: inline-block;
+  overflow: hidden;
+  background-color: #FFFFFF; /* Couleur de fond par défaut */
+  transition: background-color 0.3s ease; /* Ajoute une transition pour un effet en douceur */
 }
 .cotainerimg img {
   width: 100%;
-  height: 100%;
   object-fit: cover; /* Assurez-vous que l'image couvre toute la zone */
 }
 /*overlay child*/
 .overlay {
 position: absolute;
-top: 15vh;
+background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour mettre en évidence */
+transition: opacity 0.3s ease; /* Ajoute une transition pour un effet en douceur */
+opacity: 0; /* Initialement caché */
+top: 0vh;
 display: flex;
 width: 100%;
 height: 100%;
-justify-content: center;
 }
-.cotainerimg:hover .addtocard {
-  display: block;
+.innerContainer {
+  position: relative;
+}
+.cotainerimg:hover .overlay {
+  opacity: 1; /* Affiche la superposition au survol */
 }
