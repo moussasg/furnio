@@ -53,7 +53,7 @@ export default function Rightcomponenet() {
         <br/>
         <div className={Style.inp}>
         <div className={Style.same}>Password</div>
-        <BasicTextFields name="password" value={password} onChange={handleChange} />
+        <BasicTextFields type='password' name="password" value={password} onChange={handleChange} />
         </div>
     <div className={Style.twobutton}>
         <button type="submit" className={Style.buttcreate}><p>Create Account</p></button>
