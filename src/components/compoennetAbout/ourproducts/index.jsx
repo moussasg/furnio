@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Style from "./index.module.css";
 import espira from "../../../assets/espira.png";
 import Leviosa from "../../../assets/Leviosa.png";
@@ -10,43 +10,69 @@ import pingky from "../../../assets/image 7pingky.png";
 import potty from "../../../assets/image 8potty.png";
 
 export default function Ourproducts() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
-    <div>
-      <section>
+<div>
+     <section>
         <div className={Style.Our}>Our Products</div>
         <br/>
         <div className={Style.row}> {/*the same style for two row */}
           <div className={Style.rowoneimg}>
-            <div>
+            <div className={Style.backgroundgray}>
               <img src={syltherine} alt="syltherine"></img>
               <div className={Style.containerproducts}>
-                <h3>Syltherine</h3>
-                <p>Stylish cafe chair</p>
-                <h3>Rp 2.500.000</h3>
+                <div className={Style.title}>Syltherine</div>
+                <div className={Style.gray}>Stylish cafe chair</div>
+                <div className={Style.title}>Rp 2.500.000</div>
               </div>
             </div>
-            <div>
-              <img src={Leviosa} alt="Leviosa"></img>
+            <div className={Style.pourcent}>
+
+
+            <div className={Style.cotainerimg} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+              <div>
+                <img src={Leviosa} alt="Leviosa"></img>
+                </div>
+                {isHovered && (
+              <div className={Style.overlay}>
+                      <button className={Style.addtocard}><p>Add To Card </p></button>
+                  </div>
+                )}
               <div className={Style.containerproducts}>
-                <h3>Leviosa</h3>
-                <p>Stylish cafe chair</p>
-                <h3>Rp 2.500.000</h3>
+                <div className={Style.title}>Leviosa</div>
+                <div className={Style.gray}>Stylish cafe chair</div>
+                <div className={Style.title}>Rp 2.500.000</div>
+                </div>
               </div>
+
+
+
+
+
+
             </div>
             <div>
               <img src={lolito} alt="lolito"></img>
               <div className={Style.containerproducts}>
-                <h3>Lolito</h3>
-                <p>Luxury big sofa</p>
-                <h3>Rp 7.000.000</h3>
+                <div className={Style.title}>Lolito</div>
+                <div className={Style.gray}>Luxury big sofa</div>
+                <div className={Style.title}>Rp 7.000.000</div>
               </div>
             </div>
             <div>
               <img src={espira} alt="espira"></img>
               <div className={Style.containerproducts}>
-                <h3>Respira</h3>
-                <p>Outdoor bar table and stool</p>
-                <h3>Outdoor bar table and stool</h3>
+                <div className={Style.title}>Respira</div >
+                <div className={Style.gray}>Outdoor bar table and stool</div >
+                <div className={Style.title}>Rp 500.000</div >
               </div>
             </div>
           </div> 
@@ -58,33 +84,33 @@ export default function Ourproducts() {
             <div>
               <img src={grifo} alt="grifo"></img>
               <div className={Style.containerproducts}>
-                <h3>Grifo</h3>
-                <p>Night lamp</p>
-                <h3>Rp 1.500.000</h3>
+                <div className={Style.title}>Grifo</div>
+                <div className={Style.gray}>Night lamp</div>
+                <div className={Style.title}>Rp 1.500.000</div>
               </div>
             </div>
             <div>
               <img src={mugo} alt="mugo"></img>
               <div className={Style.containerproducts}>
-                <h3>Muggo</h3>
-                <p>Small mug</p>
-                <h3>Rp 150.000</h3>
+                <div className={Style.title}>Muggo</div>
+                <div className={Style.gray}>Small mug</div>
+                <div className={Style.title}>Rp 150.000</div>
               </div>
             </div>
             <div>
               <img src={pingky} alt="pingky"></img>
               <div className={Style.containerproducts}>
-                <h3>Pingky</h3>
-                <p>Cute bed set</p>
-                <h3>Rp 7.000.000</h3>
+                <div className={Style.title}>Pingky</div>
+                <div className={Style.gray}>Cute bed set</div>
+                <div className={Style.title}>Rp 7.000.000</div>
               </div>
             </div>
             <div>
               <img src={potty} alt="potty"></img>
               <div className={Style.containerproducts}>
-                <h3>Potty</h3>
-                <p>Minimalist flower pot</p>
-                <h3>Rp 500.000</h3>
+                <div className={Style.title}>Potty</div>
+                <div className={Style.gray}>Minimalist flower pot</div>
+                <div className={Style.title}>Rp 500.000</div>
               </div>
             </div>
           </div>

@@ -1,3 +1,6 @@
+nav {
+  width: 100%;
+}
 header {
     position: fixed; /* ou 'absolute' selon vos besoins */
       top: 10px;

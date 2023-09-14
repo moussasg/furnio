@@ -13,13 +13,24 @@ export default function Rooms() {
                <div> <button className={Style.btn}><h3 style={{ color: 'white' }}>Explore More</h3></button></div>
             </div>
             <div className={Style.imgrooms}>
+
+
+
+
             <div className={Style.cotainerimg}>
                 <img src={Bedrom} ></img> 
                 <div className={Style.overlay}>
-                     <div>01 --- Bed Room</div>
+                     <div><button>Add To  card</button></div>
                      <div><h2>Inner Place</h2></div>
                     </div>
-                    </div>
+                  </div>
+
+
+
+
+
+
+
                 <img src={livingroom} height="500px"></img>
             </div>
             </div>

@@ -10,7 +10,7 @@ export default function Mybackground() {
                   Discover Our  <br/>New Collection
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/> Ut  magnam officia, eveniet minus eaque ipsa</p>
-                <button className={Style.buyy}>BUY NOW</button>
+                <button className={Style.buyy}><div className={Style.butnow}>BUY NOW</div></button>
                 <br></br>
             </div>
         </div>

@@ -6,7 +6,7 @@ export default function Leftcompoent() {
     <div className={Style.backgroundimg}> 
     <div className={Style.textinsideimg}>
       <div className={Style.furnio}>
-    <h1>Furniro</h1>
+    Furniro
     </div>
     <div className={Style.txtflex}>
         <div>

@@ -2,13 +2,14 @@
     background-image: url(../../../assets/womenimg.png);
     height: 100vh;
     display: flex;
+    background-size: 50vw 100%;
     width: 50%;
     position: absolute; /*importante pour position*/
     left: 0;
     top: 0;
     background-repeat: no-repeat;
   }
-  h1 {
+  .furnio {
     margin-top: 10vh;
     font-family: Montserrat;
     font-size: 34px;
