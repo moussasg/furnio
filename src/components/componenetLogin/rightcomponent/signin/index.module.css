@@ -1,7 +1,10 @@
 .right {
-    height: 100vh;
-    width: 50vw;
+    height: 100;
+    width: 50%;
     gap: 7vh;
+    position: absolute;
+    top: 15vh;
+    left: 60vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,14 +22,21 @@ justify-content: center;
 flex-direction: column;
 }
 .register {
-    width: 100vw;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .twobutton {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap:3vh;
+}
+.haveaccount {
+    display: flex;
+    height: 100%;
+    gap: 1vw;
 }
 .inp {
     text-align: justify;

@@ -1,9 +1,11 @@
 import React , {useState} from 'react'
+import Ui from "../ui"
 import axios from "axios"
 import Style from "./index.module.css"
 import { useAuth } from '../autcontext';
 import { useNavigate } from 'react-router-dom';
-export default function Rightcomponenet() {
+import Leftcompoent from '../../leftcomponent/Leftcompoent';
+export default function Signin() {
     const { setUserToken } = useAuth(); // Destructure setUserToken from AuthContext
     const navigate = useNavigate()
     const [email, setEmail] = useState('');
@@ -17,12 +19,12 @@ export default function Rightcomponenet() {
         event.preventDefault();
         try { // send request to server
           const response = await axios.post('http://localhost:3002/Signin', { email, password })
-          console.log(response)
           if (response.data.success === true) {
             const token = response.data.token; // 'jwt' le clé de stockage
             localStorage.setItem('jwt',token); // Save the token in localStorage
             setUserToken(token); // with usAuth
             navigate('/Infopage');
+            console.log(response.data)
             console.log('successfull inscription !')
           }
         }
@@ -33,7 +35,8 @@ export default function Rightcomponenet() {
           }
   return (
     <>
-    <div className={Style.right}>  
+    <Leftcompoent/>
+    <div className={Style.right}> 
     <div className={Style.title}>
         <div className={Style.createtitle}>
            <div className={Style.createac}>Connect With Your account</div>
@@ -45,13 +48,15 @@ export default function Rightcomponenet() {
         <form onSubmit={handleSubmit}>
         <br/>
         <div className={Style.inp}>
-        <div className={Style.same}>Email</div>
-            <input type="email" name="email" value={email} onChange={handleChange}/>
+        <div className={Style.same}>
+            Email
+            </div>
+            <Ui type="email" name="email" value={email} onChange={handleChange}/>
         </div>
         <br/>
         <div className={Style.inp}>
         <div className={Style.same}>Password</div>
-            <input type="password" name="password" value={password} onChange={handleChange}/>
+            <Ui type="password" name="password" value={password} onChange={handleChange}/>
         </div>
         <div className={Style.twobutton}>
         <button type="submit" className={Style.buttcreate}><p>Sign In</p></button>

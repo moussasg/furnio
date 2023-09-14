@@ -44,15 +44,19 @@ export default function Rightcomponenet() {
     <div className={Style.register}>
         <div>
         <form onSubmit={handleSubmit}>
+        <div className={Style.inp}>
+            <div className={Style.same}>Name</div>
+            <Ui/>
+        </div>
         <br/>
         <div className={Style.inp}>
         <div className={Style.same}>Email</div>
-            <input type="email" name="email" value={email} onChange={handleChange}/>
+            <Ui type="email" name="email" value={email} onChange={handleChange}/>
         </div>
         <br/>
         <div className={Style.inp}>
         <div className={Style.same}>Password</div>
-            <input type="password" name="password" value={password} onChange={handleChange}/>
+            <Ui type="password" name="password" value={password} onChange={handleChange}/>
         </div>
     <div className={Style.twobutton}>
         <button type="submit" className={Style.buttcreate}><p>Create Account</p></button>
