@@ -1,9 +1,8 @@
 import React , {useState} from 'react'
-import Ui from "./ui"
 import axios from "axios"
 import Style from "./index.module.css"
-import { useAuth } from './autcontext';
-import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../autcontext';
+import { useNavigate } from 'react-router-dom';
 export default function Rightcomponenet() {
     const { setUserToken } = useAuth(); // Destructure setUserToken from AuthContext
     const navigate = useNavigate()
@@ -17,7 +16,7 @@ export default function Rightcomponenet() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try { // send request to server
-          const response = await axios.post('http://localhost:3002/Home', { email, password })
+          const response = await axios.post('http://localhost:3002/Signin', { email, password })
           console.log(response)
           if (response.data.success === true) {
             const token = response.data.token; // 'jwt' le clé de stockage
@@ -37,7 +36,7 @@ export default function Rightcomponenet() {
     <div className={Style.right}>  
     <div className={Style.title}>
         <div className={Style.createtitle}>
-           <div className={Style.createac}>Create an account</div>
+           <div className={Style.createac}>Connect With Your account</div>
        <div className={Style.letsget}>Let’s get started with your 30 days free trial</div>
         </div>
     </div>
@@ -54,16 +53,11 @@ export default function Rightcomponenet() {
         <div className={Style.same}>Password</div>
             <input type="password" name="password" value={password} onChange={handleChange}/>
         </div>
-    <div className={Style.twobutton}>
-        <button type="submit" className={Style.buttcreate}><p>Create Account</p></button>
-        <button  className={Style.buttsignup}><p>Sign up with Google</p></button>
+        <div className={Style.twobutton}>
+        <button type="submit" className={Style.buttcreate}><p>Sign In</p></button>
         </div>
         </form>
         </div> 
-    </div>
-    <div className={Style.haveaccount}>
-        <div className={Style.lastAlready}>Already have an account?</div>
-        <div className={Style.lastsignin}><Link to="/Signin">Sign in</Link></div>
     </div>
     </div>
     </>
