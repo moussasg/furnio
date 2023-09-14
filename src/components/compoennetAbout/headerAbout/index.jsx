@@ -5,6 +5,7 @@ import Loginimg from "../../../assets/loginimg.png"
 import magnifyingglass from "../../../assets/magnifyingglass.png"
 import Folow from "../../../assets/folow.png"
 import Basket from "../../../assets/basket.png"
+import Logout from '../../componenetLogin/rightcomponent/logout.jsx'
 export default function Header() {
   return (
     <>
@@ -28,7 +29,8 @@ export default function Header() {
                   <img src={Loginimg}></img>
                   <img src={magnifyingglass}></img>  
                   <img src={Folow}></img>  
-                  <img src={Basket}></img>  
+                  <img src={Basket}></img> 
+                  <Logout/> 
                 </div>
                 </div>
             </div>

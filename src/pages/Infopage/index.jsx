@@ -5,7 +5,7 @@ import Range from "../../components/compoennetAbout/Range/index"
 import Ourproducts from '../../components/compoennetAbout/ourproducts/index'
 import Rooms from "../../components/compoennetAbout/rooms/index"
 import Hashtags from '../../components/compoennetAbout/hashtags/index'
-import Navbrar from '../../components/compoennetAbout/navbar/index'
+import Footer from '../../components/compoennetAbout/footer/index'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../../components/componenetLogin/rightcomponent/autcontext'
 import Logout from '../../components/componenetLogin/rightcomponent/logout.jsx'
@@ -20,20 +20,22 @@ export default function index() {
   return (
     <>
     <div>
-      <Logout/>
       <Header/>
       <Background/>
       <br/>
       <br/>
       <Range/>
      <br/>
+     <br/>
      <Ourproducts/>
+     <br/>
      <br/>
     <Rooms/>
     <br/>
     <Hashtags/>
     <br/>
-    <Navbrar/>
+    <br/>
+    <Footer/>
     </div>
       </>
   )

@@ -11,11 +11,12 @@ export default function Range() {
         <h1 className={Style.Browse}>Browse The Range</h1>
         <p className={Style.loreum}>loreum ipsum dolor sit amet</p>
         </div>
-        <br></br>
+        <br/>
+        <br/>
         <div className={Style.imgtitle}>
-        <div className={Style.flex}><img src={dining}></img><h4>Dining</h4></div>
-        <div className={Style.flex}><img src={living}></img><h4>living</h4></div>
-        <div className={Style.flex}><img src={bedrom}></img><h4>bedrom</h4></div>
+        <div className={Style.flex}><img src={dining}></img><div className={Style.subtitle}>Dining</div ></div>
+        <div className={Style.flex}><img src={living}></img><div className={Style.subtitle}>living</div ></div>
+        <div className={Style.flex}><img src={bedrom}></img><div className={Style.subtitle}>bedrom</div ></div>
         </div>
     </section>
     </>

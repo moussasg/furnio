@@ -82,4 +82,18 @@ text-align: left;
         position: absolute; /* Utilisez une position absolue pour déplacer le paragraphe */
         left: 100px; /* Déplacez le paragraphe de 10 pixels depuis le bord droit */
       }
-    
+    .textalign {
+      text-align: left;
+    }
+    .allright {
+      display: flex;
+      justify-content: center;
+      width: 25%;
+      font-family: Poppins;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color:#000000
+          }
