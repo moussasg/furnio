@@ -146,18 +146,20 @@ text-align: left;
 color: black;   
 }
 @media screen and (max-width:1020px) {
+    .lastsignin {
+        line-height: 0px;
+    }
     .haveaccount {
         flex-direction: column;
         margin-left: 0;
-        
     }
     .lastAlready {
-        font-family: Poppins;
+font-family: Poppins;
 position: relative;
 bottom: 5vh;
 text-align: left;
 font-weight: 600;
-line-height: 30px;
+line-height: 1px;
 letter-spacing: 0.02em;
 text-align: left;
 color:rgb(14 13 13 / 79%)
