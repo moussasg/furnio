@@ -1,9 +1,9 @@
 .right {
     height: 100;
     width: 50%;
-    gap: 7vh;
+    gap: 4vh;
     position: absolute;
-    top: 15vh;
+    top: 20vh;
     left: 60vw;
     display: flex;
     flex-direction: column;
