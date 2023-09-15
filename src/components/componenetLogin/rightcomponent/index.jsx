@@ -25,7 +25,7 @@ export default function Rightcomponenet() {
     setspin(<Circular/>)
     event.preventDefault();
     try {
-      const response = await axios.post('http://3.28.122.81:8000/Home', { email, password, urname });
+      const response = await axios.post('https://dev.doxycode.com/Home', { email, password, urname });
       console.log(response);
       if (response.data.success === true) {
         const token = response.data.token;

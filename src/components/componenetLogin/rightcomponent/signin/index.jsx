@@ -22,7 +22,7 @@ export default function Signin() {
       setspin(<Circular/>)
         event.preventDefault();
         try { // send request to server
-          const response = await axios.post('http://3.28.122.81:8000/Signin', { email, password })
+          const response = await axios.post('https://dev.doxycode.com/Signin', { email, password })
           if (response.data.success === true) {
             const token = response.data.token; // 'jwt' le clé de stockage
             localStorage.setItem('jwt',token); // Save the token in localStorage
