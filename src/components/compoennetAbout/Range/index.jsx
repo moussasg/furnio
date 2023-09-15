@@ -7,16 +7,21 @@ export default function Range() {
   return (
     <>
     <section>
+      <div className={Style.titleandimg}>
         <div className={Style.title}>
-        <h1 className={Style.Browse}>Browse The Range</h1>
-        <p className={Style.loreum}>loreum ipsum dolor sit amet</p>
+        <div className={Style.Browse}>Browse The Range</div>
+        <div className={Style.loreum}>loreum ipsum dolor sit amet</div>
         </div>
         <br/>
         <br/>
         <div className={Style.imgtitle}>
-        <div className={Style.flex}><img src={dining}></img><div className={Style.subtitle}>Dining</div ></div>
+        <div className={Style.flex}>
+          <img src={dining}></img>
+          <div className={Style.subtitle}>Dining</div >
+          </div>
         <div className={Style.flex}><img src={living}></img><div className={Style.subtitle}>living</div ></div>
         <div className={Style.flex}><img src={bedrom}></img><div className={Style.subtitle}>bedrom</div ></div>
+        </div>
         </div>
     </section>
     </>

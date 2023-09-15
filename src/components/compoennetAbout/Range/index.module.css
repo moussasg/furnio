@@ -3,7 +3,14 @@ section {
     display: flex;
     flex-direction: column;
 }
+.titleandimg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .loreum{
+    width: 100%;
     font-family: Poppins;
 font-size: 20px;
 font-weight: 400;
@@ -13,15 +20,27 @@ text-align: center;
 color:#666666
 }
 .Browse {
+    width: 100%;
     font-family: Poppins;
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
     letter-spacing: 0px;
-    text-align: left;    
     color: #333333;
-display: flex;
-justify-content: center;
+text-align: center;
+
+}
+@media screen and (max-width:1000px) {
+    .Browse {
+        text-align: left;
+    }
+    .loreum {
+        text-align: left;
+    }
+    .imgtitle {
+        display: flex;
+        flex-direction: column;
+    }
 }
 .flex {
     display: flex;
@@ -37,7 +56,7 @@ justify-content: center;
 }
 .imgtitle {
     display: flex;
-    width: 100%;
+    width: 100vw;
     justify-content: center;
     gap: 20px;
 }
@@ -49,5 +68,4 @@ font-weight: 600;
 line-height: 36px;
 letter-spacing: 0px;
 text-align: center;
-
 }

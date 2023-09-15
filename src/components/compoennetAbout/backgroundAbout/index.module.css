@@ -1,4 +1,5 @@
-.bgrnd {
+section.bgrnd {
+    max-width: 100%;
     margin-top: 100px;
     left: 0px;
     padding: 0;
@@ -16,11 +17,17 @@ display: flex;
 background-color: #FFF3E3;
 width: 550px;
 height: 390px;
-margin-bottom: 200px;
-margin-left: 680px;
-border-radius: 10px;
+margin-top: -70px;
+margin-left: 600px;
+border-radius: 0px;
+}
+@media screen and (max-width:1200px) {
+    .Discover {
+        margin-left: 0px;
+    }
 }
 .Discoverdetails {
+    margin-top: 15px;
 padding: 10px;
 text-align: left;
 margin-left: 20px;

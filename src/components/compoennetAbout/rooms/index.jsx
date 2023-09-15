@@ -17,6 +17,9 @@ export default function Rooms() {
                     </div>
                <div> <button className={Style.btn}><h3 style={{ color: 'white' }}>Explore More</h3></button></div>
             </div>
+
+
+
             <div className={Style.imgrooms}>
             <div className={Style.cotainerimg}>
                 <img src={Bedrom} ></img> 
@@ -24,8 +27,10 @@ export default function Rooms() {
                      <div className={Style.bedrom}>01 ___ Bed Room</div>
                      <div className={Style.Inner}>Inner Place </div>
                     </div>
-                  </div>
+            </div>
+            <div className={Style.secimg}>
                 <img src={livingroom} height="500px"></img>
+                </div>
             </div>
             </div>
         </section>

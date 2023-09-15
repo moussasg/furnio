@@ -9,6 +9,12 @@
     flex-direction: column;
     justify-content: center;
 }
+@media screen and (max-width:1020px) {
+    .right {
+        position: absolute;
+        left: 50vw;
+    }
+}
 .createtitle {
     display: flex;
     align-items: flex-start;

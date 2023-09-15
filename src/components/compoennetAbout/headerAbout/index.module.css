@@ -13,11 +13,23 @@ header {
         height: 100px;
       }
     .myheader {
+      height: 100%;
         display: flex;
         gap: 50px;
-        width: 100%;
+        width: 100vw;
         align-items: center;
     }
+  @media screen and (max-width:1200px) {
+    .myheader {
+      height: 50%;
+      top:10px;
+      display: flex;
+      gap: 50px;
+      width: 50%;
+      flex-direction: column
+  } 
+
+  }
     .mynavleft {
     width:185px;
     height:41px;

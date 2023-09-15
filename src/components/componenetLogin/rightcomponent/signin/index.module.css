@@ -172,4 +172,10 @@ color: black;
     padding: 0 2px;
     color: #1976d2;
   }
+  @media screen and (max-width:1020px) {
+    .right {
+        position: absolute;
+        left: 50vw;
+    }
+}
   
