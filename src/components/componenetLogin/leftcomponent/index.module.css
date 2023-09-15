@@ -37,6 +37,7 @@
 /* media screen*/
 @media screen and (max-width:1100px) {
   .txtflex {
+    width: 50%;
     margin-left: 0vh;
     height: 80vh;
     white-space: normal; /* Permettre le retour à la ligne automatique */
@@ -53,14 +54,11 @@
     color: white;
     height: 30vh;
   }
-  .txtflex h3{
-    color: white;
-  }
   .txtflex h4 {
     color: white;
   }
   h2 , h4 {
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 500;
     line-height: 30px;
     letter-spacing: 0em;
