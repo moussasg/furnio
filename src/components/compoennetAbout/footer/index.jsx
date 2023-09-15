@@ -44,7 +44,7 @@ export default function Navbrar() {
     </div>
   </div>
 </div>
-    <div  className={Style.allright}>2023 furino. All rights reverved</div>
+    <div className={Style.allright}>2023 furino. All rights reverved</div>
 </>
   )
 }

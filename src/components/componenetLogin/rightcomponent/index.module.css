@@ -54,9 +54,9 @@ text-align: left;
     text-align: justify;
 }
 .createac {
-    font-family: Poppins;
+font-family: Poppins;
 font-size: 32px;
-font-weight: 500;
+font-weight: 400;
 line-height: 48px;
 letter-spacing: 0.02em;
 text-align: left;
@@ -81,7 +81,7 @@ text-align: left;
 color: #000000;
 }
 .buttcreate {
-    width: 300px;
+width: 435px;
 height: 65px;
 top: 649px;
 left: 901px;
@@ -105,7 +105,7 @@ justify-content: center;
     justify-content: center;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 435px;
 height: 65px;
 top: 649px;
 left: 901px;

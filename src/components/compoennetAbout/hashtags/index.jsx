@@ -18,6 +18,7 @@ export default function Hashtags() {
         <div className={Style.furniture}>#FuniroFurniture</div>
         </div>
         <br/>
+      <div className={Style.totlagallery}>
     <div className={Style.gallery}>
     <div className={Style.item}> 
     <img src={imgone} alt="Image 1"/>
@@ -48,6 +49,7 @@ export default function Hashtags() {
    <div className={Style.item}> 
    <img src={nign} alt="Image 9"/>
    </div>
+    </div>
     </div>
     </section>
     </>

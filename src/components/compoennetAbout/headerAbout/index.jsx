@@ -18,7 +18,7 @@ export default function Header() {
                 <div className={Style.Furnio}>Furnio</div>
                 </div>
                 </div>
-                <div className={Style.centerright}>
+                <div className={Style.navcenterandright}>
                 <div className={Style.mynavcenter}>
                     <h3>Home</h3>
                     <h3>Shop</h3>
@@ -33,7 +33,7 @@ export default function Header() {
                   <Logout/> 
                 </div>
                 </div>
-            </div>
+                </div>
             </nav>
         </header>
     </>

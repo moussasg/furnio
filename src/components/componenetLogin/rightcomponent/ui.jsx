@@ -7,7 +7,7 @@ const BasicTextFields = ({ name, value, onChange , type}) => {
     <Box
       component="form"
       sx={{
-        '& > :not(style)': { m: 1, width: '25ch' },
+        '& > :not(style)': { m: 1, width: '50ch' },
       }}
       noValidate
       autoComplete="off"
