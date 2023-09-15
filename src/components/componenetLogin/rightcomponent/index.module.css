@@ -9,12 +9,14 @@
     flex-direction: column;
     justify-content: center;
 }
-@media screen and (max-width:1020px) {
-    .right {
-        position: absolute;
-        left: 50vw;
+.buttcreate {
+    width: 435px;
+    height: 65px;
+    top: 649px;
+    left: 901px;
+    border-radius: 20px;
+    background-color:black;
     }
-}
 .createtitle {
     display: flex;
     align-items: flex-start;
@@ -77,14 +79,6 @@ line-height: 24px;
 letter-spacing: 0.02em;
 text-align: left;
 color: #000000;
-}
-.buttcreate {
-width: 435px;
-height: 65px;
-top: 649px;
-left: 901px;
-border-radius: 20px;
-background-color:black;
 }
 .buttcreate p {
     font-family: Poppins;
@@ -151,4 +145,23 @@ line-height: 30px;
 letter-spacing: 0.02em;
 text-align: left;
 color: black;   
+}
+@media screen and (max-width:1020px) {
+    .right {
+        position: absolute;
+        left: 50vw;
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    } 
+    .createtitle {
+        flex-direction: row
+    }
+    .buttcreate {
+        width: 200px;
+    }
+    .buttsignup {
+        width: 200px;
+    }
 }
