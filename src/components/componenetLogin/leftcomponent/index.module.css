@@ -34,6 +34,15 @@
     height: 83vh;
     gap: 28vh;
 }
+.abc {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#FFFFFF
+    }
 /* media screen*/
 @media screen and (max-width:1100px) {
   .haveaccount {
@@ -50,48 +59,22 @@
     margin-left: 0vh;
     max-width: 100%;
   }
-  .txtflex h1 {
-    color: white;
+  .abc {
+    height: 10vh;
+    font-family: Poppins;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#FFFFFF
   }
-  .txtflex h2 {
-    color: white;
-    height: 30vh;
-  }
-  .txtflex h4 {
-    color: white;
-  }
-  h2 , h4 {
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;    
-    white-space: normal; /* Permettre le retour à la ligne automatique */
-    overflow: visible !important; /* Assurer que le débordement est visible */
-  }
+ 
+ 
 }
 
 /* media screen*/
-.txtflex h1 {
-  color: white;
-}
-.txtflex h2 {
-  color: white;
-}
-.txtflex h3{
-  color: white;
-}
-.txtflex h4 {
-  color: white;
-}
-h2 , h4 {
-  font-family: Poppins;
-  font-size: 35px;
-  font-weight: 500;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;    
-}
+
   .ceo {
 font-family: Poppins;
 font-size: 20px;
@@ -110,3 +93,4 @@ line-height: 24px;
 letter-spacing: 0.02em;
 text-align: left;
   }
+ 

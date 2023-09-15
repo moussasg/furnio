@@ -73,6 +73,7 @@ export default function Rightcomponenet() {
               <br />
               <br />
                 <div className={Style.twobutton}>
+                  
                   <button type="submit" className={Style.buttcreate}><p>{spin}</p></button>
                   <button className={Style.buttsignup}><div className={Style.logotext}><img src={Logogoogle} alt="Google Logo" /><div>Sign up with Google</div></div></button>
                 </div>

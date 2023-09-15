@@ -47,7 +47,6 @@ flex-direction: column;
     margin-left: 60px;
     display: flex;
     width: 100%;
-    gap: 1vw;
     text-align: left;
 }
 .inp {
@@ -147,6 +146,29 @@ text-align: left;
 color: black;   
 }
 @media screen and (max-width:1020px) {
+    .haveaccount {
+        flex-direction: column;
+        margin-left: 0;
+        
+    }
+    .lastAlready {
+        font-family: Poppins;
+position: relative;
+bottom: 5vh;
+text-align: left;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 0.02em;
+text-align: left;
+color:rgb(14 13 13 / 79%)
+    }
+    .register {
+        margin-bottom: 20vh;
+        width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
     .createac {
         font-family: Poppins;
 font-size: 25px;
@@ -159,7 +181,7 @@ color: #000000;
     .right {
         position: absolute;
         left: 50vw;
-        margin-top: 1vh;
+        margin-top: 2vh;
         display: flex;
         flex-direction: column;
         width: 100vw;
