@@ -150,7 +150,7 @@ color: black;
     .right {
         position: absolute;
         left: 50vw;
-        margin-top: 10vh;
+        margin-top: 1vh;
         display: flex;
         flex-direction: column;
         width: 100vw;

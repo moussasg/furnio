@@ -36,9 +36,12 @@
 }
 /* media screen*/
 @media screen and (max-width:1100px) {
+  .haveaccount {
+    margin-top: 0px;
+  }
   .txtflex {
     width: 50%;
-    margin-left: 0vh;
+    margin-left: 2vh;
     height: 80vh;
     white-space: normal; /* Permettre le retour à la ligne automatique */
     position: relative; /* Assurez-vous que l'élément est positionné de manière relative */
