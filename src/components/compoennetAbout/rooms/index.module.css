@@ -50,7 +50,7 @@ text-align: left;
     align-items: flex-start; /* Aligner les éléments à gauche */
 }
 .titlerooms h1, .titlerooms p, .titlerooms .btn {
-    margin-bottom: 10px; /* Espacement entre les éléments si nécessaire */
+    margin-bottom: 10px; /* Espacement entre les éléments */
 }
 .btn {
     border-radius: 0;

@@ -79,8 +79,8 @@ font-weight: 400;
 line-height: 24px;
 letter-spacing: 0em;
 text-align: left;
-        position: absolute; /* Utilisez une position absolue pour déplacer le paragraphe */
-        left: 100px; /* Déplacez le paragraphe de 10 pixels depuis le bord droit */
+        position: absolute; 
+        left: 100px;
       }
     .textalign {
       text-align: left;
