@@ -24,7 +24,7 @@ export default function Hashtags() {
     <img src={imgone} alt="Image 1"/>
     </div>
    <div className={Style.item}> 
-   <img src={imgtwo} alt="Image 2"/>
+   <img src={imgtwo} alt="Image 2" style={{ width: '800px' }}/>
    </div>
    <div className={Style.item}> 
    <img src={imgtree} alt="Image 3"/>
@@ -44,10 +44,10 @@ export default function Hashtags() {
    <img src={imgseven} alt="Image 7"/>
    </div>
    <div className={Style.item}> 
-   <img src={imgheight} alt="Image 8"/>
+   <img src={imgheight} alt="Image 8" />
    </div>
    <div className={Style.item}> 
-   <img src={nign} alt="Image 9"/>
+   <img src={nign} alt="Image 9" />
    </div>
     </div>
     </div>

@@ -8,7 +8,8 @@ import grifo from "../../../assets/Imagesgrifo.png";
 import mugo from "../../../assets/imgmugo.png";
 import pingky from "../../../assets/image 7pingky.png";
 import potty from "../../../assets/image 8potty.png";
-
+import fifty from "../../../assets/fifty.png";
+import logonew from "../../../assets/Newnew.png";
 export default function Ourproducts() {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -30,7 +31,10 @@ export default function Ourproducts() {
 
           <div className={Style.cotainerimg} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className={Style.innerContainer}>
-                <img src={syltherine} alt="syltherine"></img>
+            <div style={{ textAlign: 'right' }}>
+            <img style={{height:'50px' , width:'50px'}} src={fifty}></img>
+            </div>
+              <img src={syltherine} alt="syltherine"></img>
               {isHovered && (
               <div className={Style.overlay}>
                       <button className={Style.addtocard}><p>Add To Card </p></button>
@@ -150,7 +154,11 @@ export default function Ourproducts() {
 
              <div className={Style.cotainerimg} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <div className={Style.innerContainer}>
+            <div style={{ textAlign: 'right' }}>
+            <img style={{height:'50px' , width:'50px'}} src={logonew}></img>
+           
                 <img src={potty} alt="Leviosa"></img>
+                </div>
               {isHovered && (
               <div className={Style.overlay}>
                       <button className={Style.addtocard}><p>Add To Card </p></button>

@@ -22,9 +22,12 @@ header {
         width: 100vw;
         align-items: center;
     }
+      /*media screen */
   @media screen and (max-width:1200px) {
     .myheader {
       height: 50%;
+      width: 100vw;
+      align-items: flex-start;
       top:10px;
       display: flex;
       gap: 50px;
@@ -35,7 +38,9 @@ header {
     flex-direction: column;
     gap: 20px;
   }
+
   }
+  /*media screen */
     .mynavleft {
     width:185px;
     height:41px;

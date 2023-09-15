@@ -11,6 +11,28 @@ line-height: 48px;
 letter-spacing: 0em;
 text-align: center;
 color: #3A3A3A;
+display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+img .pourcent {
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width:1000px) {
+  .Our {
+    display: flex;
+    justify-content: left;
+  }
+  .btn {
+    display: flex;
+    justify-content: flex-start;
+    }
 }
 .rowoneimg {
   width: 100%;

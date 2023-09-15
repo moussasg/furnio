@@ -1,10 +1,35 @@
 
-section.mysec {
-    width: 100%;
-}
-.totlagallery {
+
+.mysec {
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.totlagallery {
+  position: relative;
+  margin-left: 30%;
+  width: 100%;
+  gap: 20px;
   display: grid;
+  justify-content: center; /* Centre les éléments dans la grille horizontalement */
+}
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (max-width:1000px) {
+  .title { 
+    display: flex;
+    width: 50%;
+justify-content: left;
+  }
+  .totlagallery {
+    margin-left: 0%;
+  }
 }
 .Share {
   color: #616161;
@@ -24,9 +49,11 @@ letter-spacing: 0em;
 text-align: center;
 color:#3A3A3A;;
 }
+
+
 .gallery {
+  gap:50px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
     width: 100vw;
     display: grid;
     justify-content: center; /* Centrer horizontalement */
