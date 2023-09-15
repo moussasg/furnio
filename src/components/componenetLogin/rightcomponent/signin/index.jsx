@@ -1,14 +1,16 @@
 import React , {useState} from 'react'
-import Ui from "../ui"
 import axios from "axios"
 import Style from "./index.module.css"
 import { useAuth } from '../autcontext';
 import { useNavigate } from 'react-router-dom';
 import Leftcompoent from '../../leftcomponent/Leftcompoent';
-import BasicTextFields from '../ui';
+import BasicTextFields from '../../Ui/input';
+import Circular from '../../Ui/spin';
 export default function Signin() {
     const { setUserToken } = useAuth(); // Destructure setUserToken from AuthContext
     const navigate = useNavigate()
+    const [spin , setspin] = useState("Sign In")
+    const [message , setmessage] = useState('') // message vide
     const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
     const handleChange = (event) => {
@@ -17,19 +19,22 @@ export default function Signin() {
         if (name === 'password') setPassword(value);
       };
     const handleSubmit = async (event) => {
+      setspin(<Circular/>)
         event.preventDefault();
         try { // send request to server
-          const response = await axios.post('https://myfurniobackend.onrender.com/Signin', { email, password })
+          const response = await axios.post('http://3.28.122.81:8000/Signin', { email, password })
           if (response.data.success === true) {
             const token = response.data.token; // 'jwt' le clé de stockage
             localStorage.setItem('jwt',token); // Save the token in localStorage
             setUserToken(token); // with usAuth
             navigate('/Infopage');
+            setmessage('successfull Signin!')
             console.log(response.data)
-            console.log('successfull inscription !')
+            console.log('successfull Signin !')
           }
         }
           catch(error) {
+            setmessage('Signin Error!')
               console.error('Erreur lors de la requête:', error.response?.data);
               console.log('inscription Error !')
             }
@@ -39,6 +44,7 @@ export default function Signin() {
     <Leftcompoent/>
     <div className={Style.right}> 
     <div className={Style.title}>
+    <p>{message}</p>
         <div className={Style.createtitle}>
            <div className={Style.createac}>Connect With Your account</div>
        <div className={Style.letsget}>Let’s get started with your 30 days free trial</div>
@@ -62,7 +68,7 @@ export default function Signin() {
         </div>
         <br/>
         <div className={Style.twobutton}>
-        <button type="submit" className={Style.buttcreate}><p>Sign In</p></button>
+        <button type="submit" className={Style.buttcreate}><p>{spin}</p></button>
         </div>
         </form>
         </div> 

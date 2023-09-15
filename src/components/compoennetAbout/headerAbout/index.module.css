@@ -19,7 +19,7 @@ header {
       height: 100%;
         display: flex;
         gap: 50px;
-        width: 100vw;
+        width: 100%;
         align-items: center;
     }
       /*media screen */
@@ -32,13 +32,18 @@ header {
       display: flex;
       gap: 50px;
       width: 50%;
-      flex-direction: column
+      flex-direction: column;
+      align-items: left;
   } 
   .navcenterandright {
     flex-direction: column;
     gap: 20px;
   }
-
+  }
+  @media screen and (max-width:600px) {
+    .navcenterandright {
+      left: 0;
+    }
   }
   /*media screen */
     .mynavleft {

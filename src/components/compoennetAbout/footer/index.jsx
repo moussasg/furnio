@@ -1,5 +1,5 @@
 import React from 'react'
-import Ui from "../../componenetLogin/rightcomponent/ui"
+import Ui from "../../componenetLogin/Ui/input"
 import Style from "./index.module.css"
 export default function Navbrar() {
   return (
