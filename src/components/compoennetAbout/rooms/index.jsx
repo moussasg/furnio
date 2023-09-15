@@ -21,6 +21,7 @@ export default function Rooms() {
 
 
             <div className={Style.imgrooms}>
+
             <div className={Style.cotainerimg}>
                 <img src={Bedrom} ></img> 
                 <div className={Style.overlay}>
@@ -28,9 +29,11 @@ export default function Rooms() {
                      <div className={Style.Inner}>Inner Place </div>
                     </div>
             </div>
+
             <div className={Style.secimg}>
                 <img src={livingroom} height="500px"></img>
-                </div>
+              </div>
+              
             </div>
             </div>
         </section>

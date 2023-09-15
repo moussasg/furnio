@@ -24,7 +24,7 @@ export default function Rightcomponenet() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3002/Home', { email, password, urname });
+      const response = await axios.post('https://myfurniobackend.onrender.com/Home', { email, password, urname });
       console.log(response);
       if (response.data.success === true) {
         const token = response.data.token;
