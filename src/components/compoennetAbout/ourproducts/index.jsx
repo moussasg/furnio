@@ -12,11 +12,9 @@ import fifty from "../../../assets/fifty.png";
 import logonew from "../../../assets/Newnew.png";
 export default function Ourproducts() {
   const [isHovered, setIsHovered] = useState(false);
-
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
-
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
@@ -37,7 +35,7 @@ export default function Ourproducts() {
               <img src={syltherine} alt="syltherine"></img>
               {isHovered && (
               <div className={Style.overlay}>
-                      <button className={Style.addtocard}><p>Add To Card </p></button>
+                      <button className={Style.addtocard}><p>Add To Card</p></button>
                   </div>
                 )}
               <div className={Style.containerproducts}>
