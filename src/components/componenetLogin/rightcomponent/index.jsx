@@ -48,9 +48,10 @@ export default function Rightcomponenet() {
         <div className={Style.title}>
           <div className={Style.createtitle}>
           <p>{message}</p>
-          <div className={Style.createandgetstart}></div>
+          <div className={Style.createandgetstart}>
             <div className={Style.createac}>Create an account</div>
             <div className={Style.letsget}>Let’s get started with your 30 days free trial</div>
+            </div>
           </div>
         </div>
         <div className={Style.register}>
