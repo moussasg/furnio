@@ -1,7 +1,7 @@
 
 
 section.mysec {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +22,9 @@ section.mysec {
   flex-direction: column;
 }
 @media screen and (max-width:1000px) {
+  section.mysec {
+    width: 50%;
+  }
   .title { 
     display: flex;
     width: 50%;

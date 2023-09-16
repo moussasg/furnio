@@ -23,11 +23,11 @@ margin-top: -70px;
 margin-left: 600px;
 border-radius: 0px;
 }
-@media screen and (max-width:300px) {
+@media screen and (max-width:500px) {
     .Discover {
         position: relative;
-        margin-left: 0px;
-    }
+        margin-left: -400px;
+        }
 }
 .Discoverdetails {
     margin-top: 15px;
