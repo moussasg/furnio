@@ -27,7 +27,6 @@ img .pourcent {
 @media screen and (max-width:1000px) {
   .Our {
     display: flex;
-    justify-content: left;
   }
   .btn {
     display: flex;

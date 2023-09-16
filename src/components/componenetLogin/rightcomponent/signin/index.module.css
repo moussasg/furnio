@@ -177,5 +177,8 @@ color: black;
         position: absolute;
         left: 50vw;
     }
+    .buttcreate {
+        width: 250px;
+    }
 }
   

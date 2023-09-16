@@ -1,11 +1,13 @@
+section {
+    width: 100%;
+}
 section.bgrnd {
-    max-width: 100%;
+    width: 100vw;
     margin-top: 100px;
     left: 0px;
-    padding: 0;
     background-image: url(../../../assets/backgroundabout.png);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-size: 100% 100%;
     background-position: center;
     display: flex;
@@ -21,8 +23,9 @@ margin-top: -70px;
 margin-left: 600px;
 border-radius: 0px;
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:300px) {
     .Discover {
+        position: relative;
         margin-left: 0px;
     }
 }

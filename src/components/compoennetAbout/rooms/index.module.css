@@ -1,6 +1,6 @@
 
 section {
-    width: 100%;
+    width: 100vw;
     display: flex;
 }
 .sametitele{
@@ -28,7 +28,7 @@ text-align: left;
     justify-content: center;
     background-color: #FCF8F3;
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1500px) {
   .cont {
     gap: 10vw;
     max-width: 100vw;
@@ -41,6 +41,9 @@ text-align: left;
   }
   .imgrooms {
     flex-direction: column;
+  }
+  .btn {
+    display: flex;
   }
 }
 .titlerooms {
