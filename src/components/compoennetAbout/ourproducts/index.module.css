@@ -29,7 +29,7 @@ img .pourcent {
   position: relative;
   margin-left: 20px ;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 10px;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0em;
@@ -127,10 +127,10 @@ background-color:#FFFFFF
     width: 10px;
   }
   .addtocard p {
-    font-size: 13px;
+    font-size: 7px;
+    height: 0;
     text-align: center;
     width: 100vw;
-    margin-left: 0 ;
     height: 100vh;
   }
   .Our {
