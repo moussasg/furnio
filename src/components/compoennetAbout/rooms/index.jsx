@@ -2,6 +2,8 @@ import React from 'react'
 import Style from "./index.module.css"
 import Bedrom from "../../../assets/Rectangle 24bedroom.png"
 import livingroom from "../../../assets/Rectangle 25cuisin.png"
+import Goright from "../../../assets/goright.png"
+import rightrightlogo from "../../../assets/rightright.png"
 export default function Rooms() {
   return (
     <div>
@@ -25,15 +27,21 @@ export default function Rooms() {
             <div className={Style.cotainerimg}>
                 <img src={Bedrom} ></img> 
                 <div className={Style.overlay}>
+                  <div className={Style.bedrominerplace}>
                      <div className={Style.bedrom}>01 ___ Bed Room</div>
-                     <div className={Style.Inner}>Inner Place </div>
-                    </div>
+                     <div className={Style.Inner}>Inner Peace </div>
+                     </div>
+                     <div className={Style.gotightposition}>
+                    <button className={Style.goright}><img src={Goright}></img></button>
+                  </div>
+                  </div>
             </div>
-
             <div className={Style.secimg}>
-                <img src={livingroom} height="500px"></img>
+              <img src={livingroom} height="500px"></img>
+              <div className={Style.rightrightlogo}> 
+              <img src={rightrightlogo}></img>
               </div>
-              
+              </div>
             </div>
             </div>
         </section>
