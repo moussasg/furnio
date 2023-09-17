@@ -64,7 +64,7 @@ height: 48px;
     width: 100%;
   }
   .sametitele {
-    font-size: 30px;
+    font-size: 19px;
   }
   .imgrooms {
     flex-direction: column;
@@ -116,7 +116,7 @@ button.btn {
 .rightrightlogo {
   position: relative;
   bottom: 30vh;
-  left: 90%;
+  left: 85%;
 }
   /*inside img*/
 .cotainerimg {

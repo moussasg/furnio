@@ -1,5 +1,4 @@
 import './App.css'
-import { inject } from '@vercel/analytics';
 import Home from "./pages/Home/index"
 import Signin from "./components/componenetLogin/rightcomponent/signin/index"
 import Infopage from "./pages/Infopage/index"
@@ -15,7 +14,6 @@ function App() {
       setUserToken(storedToken);
     }
   }, []);
-  inject()
   return (
     
     <AuthProvider>
