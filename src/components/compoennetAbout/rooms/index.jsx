@@ -24,11 +24,7 @@ export default function Rooms() {
                 <button className={Style.btn}><h3 style={{ color: 'white' }}>Explore More</h3></button>
                 </div>
             </div>
-
-
-
             <div className={Style.imgrooms}>
-
             <div className={Style.cotainerimg}>
                 <img src={Bedrom} ></img> 
                 <div className={Style.overlay}>

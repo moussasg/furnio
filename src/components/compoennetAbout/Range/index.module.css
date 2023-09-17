@@ -1,5 +1,5 @@
 section {
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -35,24 +35,36 @@ color:#666666
     letter-spacing: 0px;
     color: #333333;
 text-align: center;
-
+} 
+.imgtitle {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    gap: 20px;
 }
-@media screen and (max-width:1500px) {
+    @media screen and (max-width:1000px) {
+        .imgtitle {
+            display: flex;
+           margin-right: 0%;
+           flex-direction: column;
+        }
+    }
+  @media screen and (max-width:1500px) {
+    .section {
+        width: 100%;
+        display: flex;
+    }
     .Browse {
         text-align: left;
     }
     .title {
-        
         position: relative;
         margin-left: 25%;
     }
     .loreum {
         text-align: left;
     }
-    .imgtitle {
-        display: flex;
-        flex-direction: column;
-    }
+   
     .titleandimg {
        justify-content: center;
     }

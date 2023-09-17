@@ -174,7 +174,7 @@ export default function Ourproducts() {
         <br/>
         <br/>
         <div className={Style.btn}>
-        <button><h3>Show More</h3></button>
+        <button className={Style.btnshowmore}><h3>Show More</h3></button>
         </div>
       </section>
     </div>

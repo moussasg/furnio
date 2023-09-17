@@ -44,6 +44,7 @@ export default function Rightcomponenet() {
 
   return (
     <>
+    <section className={Style.corp}>
       <div className={Style.right}>
         <div className={Style.title}>
           <div className={Style.createtitle}>
@@ -77,7 +78,7 @@ export default function Rightcomponenet() {
                 <div className={Style.twobutton}>
                   
                   <button type="submit" className={Style.buttcreate}><p>{spin}</p></button>
-                  <button className={Style.buttsignup}><div className={Style.logotext}><img src={Logogoogle} alt="Google Logo" /><div>Sign up with Google</div></div></button>
+                  <button className={Style.buttsignup}><div className={Style.logotext}><img src={Logogoogle} alt="Google Logo" /><div><div className={Style.signupgoogle}>Sign up with Google</div></div></div></button>
                 </div>
             </form>
             <br/>
@@ -88,6 +89,7 @@ export default function Rightcomponenet() {
           </div>
         </div>
       </div>
+      </section>
     </>
   )
 }

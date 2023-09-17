@@ -41,6 +41,7 @@ export default function Signin() {
           }
   return (
     <>
+    <section className={Style.corp}>
     <Leftcompoent/>
     <div className={Style.right}> 
     <div className={Style.title}>
@@ -74,6 +75,7 @@ export default function Signin() {
         </div> 
     </div>
     </div>
+    </section>
     </>
   )
 }

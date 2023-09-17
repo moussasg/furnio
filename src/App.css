@@ -2,13 +2,14 @@
   margin: 0 auto;
   text-align: center;
 }
+body {
+  width: 100%; /* Définit la largeur du body à 100% de la largeur de la fenêtre */
+  margin: 0; /* Supprime les marges par défaut */
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-body {
- width: 100vw;
 }
 .logo {
   height: 6em;

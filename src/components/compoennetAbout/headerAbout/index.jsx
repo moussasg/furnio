@@ -9,6 +9,7 @@ import Logout from '../../componenetLogin/rightcomponent/logout.jsx'
 export default function Header() {
   return (
     <>
+    <div className={Style.corp}>
         <header>
             <nav>
             <div className={Style.myheader}>
@@ -20,10 +21,10 @@ export default function Header() {
                 </div>
                 <div className={Style.navcenterandright}>
                 <div className={Style.mynavcenter}>
-                    <h3>Home</h3>
-                    <h3>Shop</h3>
-                    <h3>About</h3>
-                    <h3>Contact</h3>
+                    <div className={Style.textenavbar}>Home</div>
+                    <div className={Style.textenavbar}>Shop</div>
+                    <div className={Style.textenavbar}>About</div>
+                    <div className={Style.textenavbar}>Contact</div>
                 </div>
                 <div className={Style.mynavright}>
                   <img src={Loginimg}></img>
@@ -36,6 +37,7 @@ export default function Header() {
                 </div>
             </nav>
         </header>
+        </div>
     </>
   )
 }

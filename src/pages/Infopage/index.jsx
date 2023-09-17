@@ -8,7 +8,6 @@ import Hashtags from '../../components/compoennetAbout/hashtags/index'
 import Footer from '../../components/compoennetAbout/footer/index'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../../components/componenetLogin/rightcomponent/autcontext'
-import Logout from '../../components/componenetLogin/rightcomponent/logout.jsx'
 export default function index() {
   const navigate = useNavigate()
   const { userToken } = useAuth()
