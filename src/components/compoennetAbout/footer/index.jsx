@@ -1,6 +1,7 @@
 import React from 'react'
-import Ui from "../../componenetLogin/Ui/input"
 import Style from "./index.module.css"
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 export default function Navbrar() {
   return (
     <>
@@ -35,10 +36,24 @@ export default function Navbrar() {
       <div className={Style.newslet}>
         <div className={Style.newplussubsc}>
         <p className={Style.pstyle}>Newsletter</p>
+        <div className={Style.subscribe}>
+        <Box
+      component="form"
+      sx={{
+        '& > :not(style)': { m: 1, width: '21ch' },
+      }}
+      noValidate
+      autoComplete="off"
+    >
+      <TextField 
+        variant="standard" 
+        value="Enter Your Email Adress"
+        fullWidth 
+      />
+    </Box>
+          <p>SUBSCRIBE</p>
         </div>
-      <div className={Style.subscribe}>
-       <Ui value="Enter Your Email Adress"></Ui> 
-      <p>SUBSCRIBE</p>
+      
       </div>
         </div>
     </div>

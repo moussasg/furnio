@@ -1,6 +1,15 @@
 section {
     width: 100%;
 }
+.loreum  {
+font-family: Poppins;
+font-size: 20px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+color: #333333;
+}
 section.bgrnd {
     width: 100vw;
     margin-top: 100px;
@@ -15,19 +24,12 @@ section.bgrnd {
     align-items: center;
 }
 .Discover {
-display: flex;
 background-color: #FFF3E3;
 width: 550px;
 height: 390px;
 margin-top: -70px;
-margin-left: 600px;
+margin-left: 30vw;
 border-radius: 0px;
-}
-@media screen and (max-width:1000px) {
-    .Discover {
-        position: relative;
-        margin-left: -400px;
-        }
 }
 .Discoverdetails {
     margin-top: 15px;
@@ -39,12 +41,21 @@ display: flex;
     flex-direction: column;
 }
 .h1discover {
-color: #B88E2F;
+    color: #B88E2F;
 font-family: Poppins;
 font-size: 52px;
 font-weight: 700;
 line-height: 65px;
 letter-spacing: 0px;
+}
+@media screen and (max-width:1000px) {
+    .Discover {
+        position: relative;
+        margin-left: 15vw;
+    }
+    .h1discover {
+        word-wrap: break-word; /* Permet au texte de sauter automatiquement à la ligne */
+    }
 }
 .newariv {
     color:#333333;

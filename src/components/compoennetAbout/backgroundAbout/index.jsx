@@ -9,7 +9,7 @@ export default function Mybackground() {
                 <div className={Style.h1discover}>
                   Discover Our  <br/>New Collection
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/> Ut  magnam officia, eveniet minus eaque ipsa</p>
+                <div className={Style.loreum}>Lorem ipsum dolor sit amet consectetur adipisicing elit.Ut <br/>elit tellus, luctus nec ullamcorper mattis.</div>
                 <button className={Style.buyy}><div className={Style.butnow}>BUY NOW</div></button>
                 <br></br>
             </div>
