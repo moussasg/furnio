@@ -39,12 +39,31 @@
   font-size: 32px;
   font-weight: 500;
   line-height: 55px;
-  letter-spacing: 0em;
   text-align: left;
   color:#FFFFFF
     }
+    .positionabc {
+      position: relative;
+    }
 /* media screen*/
 @media screen and (max-width:1100px) {
+  .positionabc {
+    width: 100%;
+    position: relative;
+    top: 20vh;
+    margin-left: 0px;
+  } 
+  .abc {
+    position: relative;
+    margin-left: 0px;
+    font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#FFFFFF
+  }
   .haveaccount {
     margin-top: 0px;
   }
@@ -56,23 +75,10 @@
     position: relative; /* Assurez-vous que l'élément est positionné de manière relative */
   }
   .furnio {
-    margin-left: 0vh;
+    margin-left: 2vw;
     max-width: 100%;
   }
-  .abc {
-    height: 10vh;
-    font-family: Poppins;
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 55px;
-  letter-spacing: 0em;
-  text-align: left;
-  color:#FFFFFF
-  }
- 
- 
 }
-
 /* media screen*/
 
   .ceo {
