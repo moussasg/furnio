@@ -51,7 +51,8 @@ height: 48px;
 /*mediscreen*/
 @media screen and (max-width:1500px) {
   section {
-    width: 90%;
+    width: 100%;
+    display: flex;
   }
   .cont {
     gap: 10vw;

@@ -11,9 +11,9 @@ export default function Leftcompoent() {
     <div className={Style.txtflex}>
         <div>
             <div>
-            <div className={Style.abc}>abc.com is the best place to find </div> <br/>
-            <div className={Style.abc}>remote talent. We’ve been super </div> <br/>
-            <div className={Style.abc}>impress by the quality of applicants</div><br/>
+            <div className={Style.abc}>abc.com is the best place to find </div> 
+            <div className={Style.abc}>remote talent. We’ve been super </div> 
+            <div className={Style.abc}>impress by the quality of applicants</div>
             </div>
             </div>
             <div>
