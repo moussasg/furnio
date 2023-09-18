@@ -1,4 +1,4 @@
-section {
+section.secptoduc {
   width: 100vw;
 }
 .row {
@@ -23,7 +23,6 @@ display: flex;
     width: 100%;
     justify-content: center;
 }
-
 img .pourcent {
   display: flex;
   width: 100%;
@@ -130,7 +129,9 @@ color: #898989;
   background: #FFF;
 }
 @media screen and (max-width:1000px) {
-
+  section.secptoduc {
+    width: 100%;
+  }
   .gray {
     font-size: 12px;
   }

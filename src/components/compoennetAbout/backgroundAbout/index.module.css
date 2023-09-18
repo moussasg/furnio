@@ -49,9 +49,12 @@ line-height: 65px;
 letter-spacing: 0px;
 }
 @media screen and (max-width:1000px) {
+    .section.bgrnd {
+        width: 30%;
+    }
     .Discover {
         position: relative;
-        margin-left: 15vw;
+        margin-left: -10vw;
     }
     .h1discover {
         word-wrap: break-word; /* Permet au texte de sauter automatiquement à la ligne */

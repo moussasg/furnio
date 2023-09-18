@@ -3,8 +3,10 @@
   text-align: center;
 }
 body {
-  width: 100%; /* Définit la largeur du body à 100% de la largeur de la fenêtre */
+  max-width: 100%; /* Définit la largeur du body à 100% de la largeur de la fenêtre */
   margin: 0; /* Supprime les marges par défaut */
+  padding: 0;
+  overflow-x: hidden;
 }
 * {
   box-sizing: border-box;

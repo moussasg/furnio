@@ -12,7 +12,7 @@ import nign from "../../../assets/9.png"
 export default function Hashtags() {
   return (
     <>
-    <section className={Style.mysec}>
+    <section>
         <div className={Style.title}>
         <div className={Style.Share}>Share your setup with</div><br/>
         <div className={Style.furniture}>#FuniroFurniture</div>
